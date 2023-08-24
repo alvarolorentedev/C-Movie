@@ -51,8 +51,7 @@ We are going to start adding a new source and integrate our propietary algorithm
 
 ## Phase 1
 
-![image](https://github.com/kanekotic/C-Movie/assets/3071208/28a364eb-ce0c-4c4b-9882-a0272a05d166)
-
+![image](https://github.com/kanekotic/C-Movie/assets/3071208/e5785059-e9ad-4f66-b6ed-38144fcb1025)
 
 ## Phase 2
 
