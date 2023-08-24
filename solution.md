@@ -1,21 +1,32 @@
 # Solution
 
-The C-Movie Platform is going to compete in a crowded business space. For this is important before doing a big upfront investment to validate if there is a business value on the project. For this, the solution should be solved in different phases.
+The C-Movie Platform is going to compete in a crowded business space. For this is important before doing a big upfront investment to validate if there is a business value on the project. 
+
+For this, the solution should be solved in different phases:
 - **Discovery**: Understand the problem.
 - **MVP**: Answer unknowns to validate the validity of the project, and if so start building SEO Ranking.
 - **MLP**: Start validating our algorithm is a value adder.
 - **Phase 1**: Initialize the data platform & products.
 - **Phase 2**: Standardize the architecture.
 
+**Discovery, MVP & MLP** should be very short cycles of development as they build the confidence on the value of the project, and require a lot of synchronization between disciplinary departments. On the other side **Phase 1 & 2** are long-term strategy, so they might reduce the feedback cycle and also the need for synchronization with other departments.
+
 ## Discovery
 
 If we run a domain discovery using event storming, we can see the next situation:
-![image](https://github.com/kanekotic/C-Movie/assets/3071208/bd63e0c8-269e-46ee-aa18-d59308e64ff1)
+
+![image](https://github.com/kanekotic/C-Movie/assets/3071208/05086a9e-3861-47e6-850e-b5ae083db6e1)
+
+
 This means we have at least 2 flow streams of work:
 - Conversion: related to attracting users and making them use our service in a recurrent way.
-- Movies: will provide the search and rating capability (as we can start smelling here, there might be 2 different subdomains).
+- Movies: will provide the capability for:
+  - search movies
+  - Calculate ratings
+  
+  We can start having a smells that this might be 2 different subdomains.
 
-We also gather some data on our competitors that will help us take some decisions in the MVP phase. In this case, using for example google trends, our main competitor by traffic will be IMDB. So we are going to go with the supposition that their data has a better quality that is driving the higher traffic.
+We also gathered some data on our competitors that will help us take some decisions in the MVP phase. For example, extracting insights from google trends, our main competitor by traffic will be IMDB. So we are going to go with the supposition that their data has a better quality that is driving the higher traffic.
 
 ![image](https://github.com/kanekotic/C-Movie/assets/3071208/b969786f-b54c-47f3-8e36-cfd630bf5157)
 
