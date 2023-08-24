@@ -37,23 +37,29 @@ To validate we have a business case, we will create an initial MVP. We aim to so
 - Are users interested in a new movie platform?
   - **Success Criteria**: We have 10k Monthly unique visitors, with at least 8% of conversion rate tracked by the CTA.
 - Do we have the expected granularity data from our main competitor?
-   - **Success Criteria**: We have >=80% of the required data from a single provider. 
+   - **Success Criteria**: We have >=80% of the required data from a single provider.
+ 
+If the success criteria are achieved, and we continue with the project. An added benefit is that we can start building an SEO ranking that will be required for the project to be a success on the long-term.
 
-### Cloud Architecture
+### Architecture
 
-We are going to create a simple service using a serverless function (Lambda):
-- Accesible from the internet for this we will use cloudfront.
-- Implements [SSR](https://en.wikipedia.org/wiki/Server-side_scripting), to keep propietary code not accesible to the client.
-- In front of cloudfront we will add a [WAF](https://aws.amazon.com/es/waf/) to prevent scrapping and abuse that coulds affect our costs.
+We are going to create a simple service:
+- A frontend application in [Amplify](https://aws.amazon.com/es/amplify/) for users to access our content.
+- A serverles function using [Lambda](https://aws.amazon.com/es/lambda/) that will provide the data. In front of this Lambda we will provision:
+    - [API Gateway](https://aws.amazon.com/es/api-gateway/): to make the lambda accessible from the internet
+    - [WAF](https://aws.amazon.com/es/waf/): to prevent scrapping and abuse that coulds affect our costs.
 
-![image](https://github.com/kanekotic/C-Movie/assets/3071208/53c6e801-da68-4e7d-90ba-60a2e430bc75)
+![image](https://github.com/kanekotic/C-Movie/assets/3071208/0cf3d4b8-7a2a-46b7-bf61-52eb773298ea)
 
-The lambda implementation will only work as a pass-through transformation of the data retrieved from IMDB.
 
-If the success criteria pass, and we continue with the project. Another benefit is that we can start building an SEO ranking that will be required for the project to be a success on the long-term.
+The lambda implementation will only work as a pass-through transformation of the data retrieved from IMDB API, where we will conver the data to our expected model meaning that in the MVP the lambda is an anticorruption layer that works as a BFF.
 
-### Code Architecture
+We will define our data model as:
+```json
+{
 
+}
+```
 
 ## MLP 
 
