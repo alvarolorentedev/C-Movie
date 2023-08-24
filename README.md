@@ -24,7 +24,7 @@ C-Rating is calculated using a sophisticated proprietary algorithm taking into a
 
 ## Solution
 
-- [Text](./solution.md)
+- [Document](./solution.md)
 - [Diagram](https://excalidraw.com/#json=MN42XnDyBh8kBJoctww1L,aoJcus8GY3SUP94axCQ_bQ)
 - Video TL;DR;:
 
