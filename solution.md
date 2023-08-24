@@ -8,6 +8,14 @@ The C-Movie Platform is going to compite in a crowded bussiness space. For this 
 
 Please fint all the assumptions in the assumptions file.
 
+## Discovery
+
+If we run a domain discovery using event storming we can se the next situation:
+![image](https://github.com/kanekotic/C-Movie/assets/3071208/bd63e0c8-269e-46ee-aa18-d59308e64ff1)
+This means we have at least 2 flow streams of work:
+- Conversion: related to atracting our users and make them use our page in a recurrent way.
+- Movies: will provide the search and rating capability
+
 ## MVP
 
 To validate we have a bussiness case we are going to create an initial MVP. Whe aim to to solve the next questions:
@@ -21,3 +29,5 @@ For this we are going to create a simple service using a serverless function (La
 
 
 ![image](https://github.com/kanekotic/C-Movie/assets/3071208/53c6e801-da68-4e7d-90ba-60a2e430bc75)
+
+Success criteria 
