@@ -46,7 +46,7 @@ An added benefit is that we can start building an SEO ranking that will be requi
 
 ### Architecture
 
-We are going to create a simple service:
+We are going to create a simple service[^1]:
 - A frontend application in [Amplify](https://aws.amazon.com/es/amplify/) for users to access our content.
 - A serverles function using [Lambda](https://aws.amazon.com/es/lambda/) that will provide the data. In front of this Lambda we will provision:
     - [API Gateway](https://aws.amazon.com/es/api-gateway/): to make the lambda accessible from the internet
@@ -131,3 +131,4 @@ The tasks on this phase will be to:
 
 ![image](https://github.com/kanekotic/C-Movie/assets/3071208/3014b1b6-8f96-4390-bf59-bda4902210e4)
 
+[^1]: We asume we are working in AWS
