@@ -33,13 +33,16 @@ We also gathered some data on our competitors that will help us take some decisi
 
 ### Bussiness Intent
 
-To validate we have a business case, we will create an initial MVP. We aim to solve the next questions:
+We aim to solve the next questions:
 - Are users interested in a new movie platform?
   - **Success Criteria**: We have 10k Monthly unique visitors, with at least 8% of conversion rate tracked by the CTA.
 - Do we have the expected granularity data from our main competitor?
    - **Success Criteria**: We have >=80% of the required data from a single provider.
- 
-If the success criteria are achieved, and we continue with the project. An added benefit is that we can start building an SEO ranking that will be required for the project to be a success on the long-term.
+
+An added benefit is that we can start building an SEO ranking that will be required for the project to be a success on the long-term.
+
+> If the success criteria are achieved, we continue with the project.
+> After this phase is still possible that the project is cancelled.
 
 ### Architecture
 
@@ -50,7 +53,6 @@ We are going to create a simple service:
     - [WAF](https://aws.amazon.com/es/waf/): to prevent scrapping and abuse that coulds affect our costs.
 
 ![image](https://github.com/kanekotic/C-Movie/assets/3071208/0cf3d4b8-7a2a-46b7-bf61-52eb773298ea)
-
 
 The lambda implementation will only work as a pass-through transformation of the data retrieved from IMDB API, where we will conver the data to our expected model meaning that in the MVP the lambda is an anticorruption layer that works as a BFF.
 
@@ -69,17 +71,35 @@ We will define our data model as:
 
 ## MLP 
 
-We are going to start adding a new source and integrate our proprietary algorithm.
+### Bussiness Intent
 
-![image](https://github.com/kanekotic/C-Movie/assets/3071208/877e4380-75c4-4382-aed2-e34acfa945f9)
+We aim to solve the next questions:
+- Is our propietary algorithm adding value?
+  - **Success Criteria**: With an A/B test, we see an increase of 5% for the c-movie Algorithm users.
 
+> If the success criteria are achieved, we continue with the project.
+> After this phase we have the certainty the project will not be cancelled.
 
-### Success criteria 
- - With an A/B test, we see an increase of 5% for the c-movie Algorithm users.
+### Architecture
+
+We will do the next 2 tasks: 
+- Create an implementation of the rating algorithm. 
+- Add a new mainstream data source like `rotten tomatoes` to feed the algortihm. 
+
+![image](https://github.com/kanekotic/C-Movie/assets/3071208/cb5694ea-c9d8-44b2-94db-d6e4101a6d27)
+
 
 ## Phase 1
 
-After validation that our algorithm improves the general engagement, we need to expand on the long-term solution, for this, we are going to start the batch processing platform (Data lake). 
+### Bussiness Intent
+
+We aim to:
+- Expand the accuracy of the algorithm with more data sources
+  - **Success Criteria**: We see an increase if the returning users of 1%.
+
+### Architecture
+
+We work on the long-term solution, for this, we are going to start the batch processing platform (Data lake). 
 
 We will have 4 zones:
 - Landing: Raw data consumed in original format
@@ -89,11 +109,7 @@ We will have 4 zones:
 
 We will load the production level data into a transaction data source to be able to integrate to the current solution.
 
-![image](https://github.com/kanekotic/C-Movie/assets/3071208/e5785059-e9ad-4f66-b6ed-38144fcb1025)
-
-
-### Success criteria 
- - ...
+![image](https://github.com/kanekotic/C-Movie/assets/3071208/ca77a9a3-8f78-4de0-a8ee-32b4ee5217f6)
 
 ## Phase 2
 
