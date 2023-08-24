@@ -26,3 +26,8 @@ C-Rating is calculated using a sophisticated proprietary algorithm taking into a
 
 - [Text](./solution.md)
 - [Diagram](https://excalidraw.com/#json=MN42XnDyBh8kBJoctww1L,aoJcus8GY3SUP94axCQ_bQ)
+- Video TL;DR;:
+
+https://github.com/kanekotic/C-Movie/assets/3071208/f123687f-c2c7-44ef-922c-1c85a6ced8a4
+
+
