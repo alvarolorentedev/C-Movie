@@ -73,8 +73,7 @@ Finally we will migrate the existing direct access data sources into de Data Lak
 
 We will create a new production level data product based in the previous one that agregates data sources, this new data product will be a migration of the algorithm from the lambda into this batched solution. This will populate a new DynamoDB that will simplify the access to the data.
 
-![image](https://github.com/kanekotic/C-Movie/assets/3071208/7183e284-1ff2-45f6-bc54-f27e8949afe3)
-
+![image](https://github.com/kanekotic/C-Movie/assets/3071208/5a18cc94-eace-41b5-88f4-9d5955122b01)
 
 ### Success criteria 
  - ...
