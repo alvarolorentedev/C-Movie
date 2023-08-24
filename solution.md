@@ -53,8 +53,28 @@ We are going to start adding a new source and integrate our propietary algorithm
 
 After validation that our algorithm improves the general engagement we need to expand on the long term solution, for this we are going to start the batch procesing platform (Datalake). 
 
+In this first phase we will have 4 zones:
+- Landing: Raw data consumend in original format
+- Refind: Transformation into data friendly handling format (ex. parquet)
+- Validated: Transformation into standardized data model
+- Production: aggregation of multiple validated data sources
+
+We will load the production level data into a transaction data source to be able to integrate to the current solution.
+
 ![image](https://github.com/kanekotic/C-Movie/assets/3071208/e5785059-e9ad-4f66-b6ed-38144fcb1025)
+
+
+### Success criteria 
+ - ...
 
 ## Phase 2
 
+Finally we will migrate the existing direct access data sources into de Data Lake to comply with the long term solution.
+
+We will create a new production level data product based in the previous one that agregates data sources, this new data product will be a migration of the algorithm from the lambda into this batched solution. This will populate a new DynamoDB that will simplify the access to the data.
+
 ![image](https://github.com/kanekotic/C-Movie/assets/3071208/7183e284-1ff2-45f6-bc54-f27e8949afe3)
+
+
+### Success criteria 
+ - ...
