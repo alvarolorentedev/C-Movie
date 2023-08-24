@@ -17,7 +17,6 @@ If we run a domain discovery using event storming, we can see the next situation
 
 ![image](https://github.com/kanekotic/C-Movie/assets/3071208/05086a9e-3861-47e6-850e-b5ae083db6e1)
 
-
 This means we have at least 2 flow streams of work:
 - Conversion: related to attracting users and making them use our service in a recurrent way.
 - Movies: will provide the capability for:
@@ -32,21 +31,29 @@ We also gathered some data on our competitors that will help us take some decisi
 
 ## MVP
 
+### Bussiness Intent
+
 To validate we have a business case, we will create an initial MVP. We aim to solve the next questions:
 - Are users interested in a new movie platform?
+  - **Success Criteria**: We have 10k Monthly unique visitors, with at least 8% of conversion rate tracked by the CTA.
 - Do we have the expected granularity data from our main competitor?
+   - **Success Criteria**: We have >=80% of the required data from a single provider. 
 
-For this, we are going to create a simple service using a serverless function (Lambda).
+### Cloud Architecture
+
+We are going to create a simple service using a serverless function (Lambda):
+- Accesible from the internet for this we will use cloudfront.
+- Implements [SSR](https://en.wikipedia.org/wiki/Server-side_scripting), to keep propietary code not accesible to the client.
+- In front of cloudfront we will add a [WAF](https://aws.amazon.com/es/waf/) to prevent scrapping and abuse that coulds affect our costs.
 
 ![image](https://github.com/kanekotic/C-Movie/assets/3071208/53c6e801-da68-4e7d-90ba-60a2e430bc75)
 
 The lambda implementation will only work as a pass-through transformation of the data retrieved from IMDB.
 
-If the success criteria pass, and we continue with the project, another benefit is to start building an SEO ranking that will be required for the project to be a success.
+If the success criteria pass, and we continue with the project. Another benefit is that we can start building an SEO ranking that will be required for the project to be a success on the long-term.
 
-### Success criteria 
- - We have >=80% of the required data from a single provider.
- - We have 10k Monthly unique visitors, with at least 8% of conversion rate  tracked by the CTA.
+### Code Architecture
+
 
 ## MLP 
 
