@@ -1,11 +1,11 @@
 # Solution
 
 The C-Movie Platform is going to compite in a crowded bussiness space. For this is important before doing a big upfront investment validate if there is a bussiness value on the project. For this the solution should be solved in diferent phases.
-- Discovery: Understand the problem.
-- MVP: Answer unkowns to validate the validity of the project, and if so start building SEO Ranking.
-- MLP: Start validating our algorithm is a value adder.
-- Phase 1: Initialize the data platform & products.
-- Phase 2: Standardize the architecture.
+- **Discovery**: Understand the problem.
+- **MVP**: Answer unkowns to validate the validity of the project, and if so start building SEO Ranking.
+- **MLP**: Start validating our algorithm is a value adder.
+- **Phase 1**: Initialize the data platform & products.
+- **Phase 2**: Standardize the architecture.
 
 Please fint all the assumptions in the assumptions file.
 
@@ -50,6 +50,8 @@ We are going to start adding a new source and integrate our propietary algorithm
  - With an A/B test, we see an increase of 5% for the c-movie Algorithm users.
 
 ## Phase 1
+
+After validation that our algorithm improves the general engagement we need to expand on the long term solution, for this we are going to start the batch procesing platform (Datalake). 
 
 ![image](https://github.com/kanekotic/C-Movie/assets/3071208/e5785059-e9ad-4f66-b6ed-38144fcb1025)
 
