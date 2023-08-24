@@ -89,7 +89,7 @@ We will do the next 2 tasks:
 ![image](https://github.com/kanekotic/C-Movie/assets/3071208/cb5694ea-c9d8-44b2-94db-d6e4101a6d27)
 
 
-## Phase 1
+## Phase 1: Expand sources
 
 ### Bussiness Intent
 
@@ -109,12 +109,25 @@ We will have 4 zones:
 
 We will load the production level data into a transaction data source to be able to integrate to the current solution.
 
-![image](https://github.com/kanekotic/C-Movie/assets/3071208/ca77a9a3-8f78-4de0-a8ee-32b4ee5217f6)
+![image](https://github.com/kanekotic/C-Movie/assets/3071208/60ad30b8-3036-47bf-be8f-11a383f7e815)
 
-## Phase 2
+## Phase 2: Performance and Cost optimization
 
-Finally, we will migrate the existing direct access data sources into de Data Lake to comply with the long-term solution.
+### Bussiness Intent
 
-We will create a new production level data product based on the previous one that aggregates data sources, this new data product will be a migration of the algorithm from the lambda into this batched solution. This will populate a new DynamoDB that will simplify the access to the data.
+We aim to:
+- Increase user satisfaction
+  - **Success Criteria**: We see an increase if the returning users of 3%.
+- Reduce the cost of our solution
+  - **Success Criteria**: We see an decrese on our running cost of 5%.
 
-![image](https://github.com/kanekotic/C-Movie/assets/3071208/5a18cc94-eace-41b5-88f4-9d5955122b01)
+### Architecture
+
+The tasks on this phase will be to:
+- Migrate the existing direct access data sources (IMDB & Rotten Tomatoes) into de Data Lake to comply with the long-term solution. Removing also unrequired access to the API and delays .
+- Create a production level data product that will be a batch implementation of the propietari algorithm. To feed it into the solution we will:
+  - Add the data to a [DynamoDB](https://aws.amazon.com/es/dynamodb/) as the access will be by an indexed value. This will improve performace and costs from the RDS solution.
+  - Use `expand & contract`to start consuming from the new data source and deprecate the old code.
+
+![image](https://github.com/kanekotic/C-Movie/assets/3071208/3014b1b6-8f96-4390-bf59-bda4902210e4)
+
