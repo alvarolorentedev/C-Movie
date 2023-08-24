@@ -55,9 +55,15 @@ We are going to create a simple service:
 The lambda implementation will only work as a pass-through transformation of the data retrieved from IMDB API, where we will conver the data to our expected model meaning that in the MVP the lambda is an anticorruption layer that works as a BFF.
 
 We will define our data model as:
-```json
+```js
 {
-
+  title: string,
+  genre: string,
+  rating: {
+    performance: number[0-100],
+    screenplay: number[0-100],
+    soundtrack: number[0-100]
+  }
 }
 ```
 
