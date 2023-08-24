@@ -102,10 +102,10 @@ We aim to:
 We work on the long-term solution, for this, we are going to start the batch processing platform (Data lake). 
 
 We will have 4 zones:
-- Landing: Raw data consumed in original format
-- Refined: Transformation into data friendly handling format (ex. parquet)
-- Validated: Transformation into standardized data model
-- Production: aggregation of multiple validated data sources
+- **Landing**: Raw data consumed in original format
+- **Refined**: Transformation into data friendly handling format (ex. parquet)
+- **Validated**: Transformation into standardized data model
+- **Production**: aggregation of multiple validated data sources
 
 We will load the production level data into a transaction data source to be able to integrate to the current solution.
 
@@ -129,6 +129,7 @@ The tasks in this phase will be to:
   - Add the data to a [DynamoDB](https://aws.amazon.com/es/dynamodb/) as the access will be by an indexed value. This will improve performance and costs from the RDS solution.
   - Use `expand & contract`to start consuming from the new data source and deprecate the old code.
 
-![Image](https://github.com/kanekotic/C-Movie/assets/3071208/3014b1b6-8f96-4390-bf59-bda4902210e4)
+![image](https://github.com/kanekotic/C-Movie/assets/3071208/6a3421a2-7587-464c-be26-a2f4995c35d6)
+
 
 [^1]: We assume we are working in AWS
