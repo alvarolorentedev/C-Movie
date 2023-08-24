@@ -17,3 +17,5 @@ To validate we have a bussiness case we are going to create an initial MVP. Whe 
 This Will also allow our site to start building an SEO ranking that will be required for the proyect to be a success.
 
 For this we are going to create a simple service using a serverless function (Lambda)
+
+![image](https://github.com/kanekotic/C-Movie/assets/3071208/53c6e801-da68-4e7d-90ba-60a2e430bc75)
