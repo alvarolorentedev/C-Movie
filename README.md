@@ -21,3 +21,8 @@ C-Movie ratings are going to be available as a web application and through a RES
 
 
 C-Rating is calculated using a sophisticated proprietary algorithm taking into account provider total ratings and ratings by category.
+
+## Solution
+
+- [Text](./solution.md)
+- [Diagram](https://excalidraw.com/#json=MN42XnDyBh8kBJoctww1L,aoJcus8GY3SUP94axCQ_bQ)
