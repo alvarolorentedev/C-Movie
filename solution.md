@@ -31,9 +31,13 @@ This Will also allow our site to start building an SEO ranking that will be requ
 
 For this we are going to create a simple service using a serverless function (Lambda)
 
-
 ![image](https://github.com/kanekotic/C-Movie/assets/3071208/53c6e801-da68-4e7d-90ba-60a2e430bc75)
+
+The lambda implementation will only work as a passthrough transformation of the data retrieved from IMDB.
 
 ### Success criteria 
  - We have >=80% of the required data from a single provider.
  - We have 10k Monthly unique visitors, with at least 8% of conversion rate  tracked by the CTA.
+
+## MLP 
+
