@@ -41,3 +41,19 @@ The lambda implementation will only work as a passthrough transformation of the 
 
 ## MLP 
 
+We are going to start adding a new source and integrate our propietary algorithm.
+
+![image](https://github.com/kanekotic/C-Movie/assets/3071208/877e4380-75c4-4382-aed2-e34acfa945f9)
+
+
+### Success criteria 
+ - With an A/B test, we see an increase of 5% for the c-movie Algorithm users.
+
+## Phase 1
+
+![image](https://github.com/kanekotic/C-Movie/assets/3071208/28a364eb-ce0c-4c4b-9882-a0272a05d166)
+
+
+## Phase 2
+
+![image](https://github.com/kanekotic/C-Movie/assets/3071208/7183e284-1ff2-45f6-bc54-f27e8949afe3)
